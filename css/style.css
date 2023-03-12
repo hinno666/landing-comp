@@ -1,0 +1,253 @@
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{
+	outline: none;
+}
+
+a:focus,a:active{
+	outline: none;
+}
+
+nav,footer,header,aside{
+	display: block;
+}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 136.7%;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{
+	font-family:inherit;
+}
+
+input::-ms-clear{
+	display: none;
+}
+
+button{
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding:0;
+	border:0;
+}
+
+a, a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+ul li{
+	list-style: none;
+}
+
+img{
+	vertical-align: top;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:inherit;
+	font-weight: 400;}
+/*--------------------*/
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+.wrapper {
+}
+.header {
+    min-height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.container {
+    max-width: 1760px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.header__menu {
+    min-height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+.logo {
+}
+.menu__list {
+    display: flex;
+    gap: 56px;
+}
+.list__item {
+}
+.menu__register {
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.header__info {
+    max-width: 900px;
+    margin-left: 230px;
+}
+.header__title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 140%;
+    margin-bottom: 50px;
+}
+.header__timer {
+    display: flex;
+    gap: 30px;
+}
+.timer__block {
+    text-align: center;
+    background: #121212;
+    width: 107px;
+    height: 112px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timer__block span {
+font-weight: 700;
+font-size: 36px;
+line-height: 140%;
+}
+
+.header__footer {
+    background: #121212;
+    min-height: 130px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.header__footer-info {
+    display: flex;
+    gap: 81px;
+}
+.register__course {
+    padding: 10px 30px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+}
+.students__course {
+}
+.header__students {
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    gap: 50;
+}
+.student__earned {
+}
+
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  background-color: #815f7d;
+  padding: 24px;
+  border-radius: 8px;
+  position: relative;
+  text-align: center;
+}
+
+.popup__title {
+  margin-top: 0;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__form input {
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.popup__form button[type="submit"] {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup__form button[type="submit"]:hover {
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #1b051c 93.72%);
+}
+
+.popup__close {
+  position: absolute;
+  top: -17px;
+  right: -17px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.popup__close svg {
+  width: 14px;
+  height: 14px;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.popup__close:hover {
+  transform: rotate(45deg);
+}
